@@ -18,10 +18,10 @@ from sklearn.preprocessing import MinMaxScaler
 threshold = 0.5
 emg_data_buffer = deque(maxlen=150)
 new_data_count = 0
-force_rf = load('modelStre_force.joblib')
-gesture_rf= load('modelStre.joblib')
-force_scaler = load('scaler_force.joblib')
-gesture_scaler = load('scaler.joblib')
+force_rf = load('model_save/modelStre_force.joblib')
+gesture_rf= load('model_save/modelStre.joblib')
+force_scaler = load('model_save/scaler_force.joblib')
+gesture_scaler = load('model_save/scaler.joblib')
 # # 加载最大和最小值数据
 # max_min_values = pd.read_csv('./max/min_max_values.csv')
 # max_vals = max_min_values['max_value'].values
